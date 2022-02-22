@@ -1,0 +1,121 @@
+local DoggieScriptHub = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local DoggieName = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local DoggieLogo = Instance.new("ImageLabel")
+local UICorner_2 = Instance.new("UICorner")
+local UICorner_3 = Instance.new("UICorner")
+local AncesterGUIv1 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local AncesterGUIv2 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local JailBreakAutoRob = Instance.new("TextButton")
+local UICorner_6 = Instance. New("UICorner")
+local OpenGUI = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+
+
+DoggieScriptHub.Name = "Doggie ScriptHub"
+DoggieScriptHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+DoggieScriptHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = DoggieScriptHub
+Main.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+Main.Position = UDim2.new(0.269135803, 0, 0.101391651, 0)
+Main.Size = UDim2.new(0, 494, 0, 375)
+Main.Visible = false
+
+DoggieName.Name = "DoggieName"
+DoggieName.Parent = Main
+DoggieName.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+DoggieName.BorderSizePixel = 0
+DoggieName.Position = UDim2.new(0.148638129, 0, 0.138051897, 0)
+DoggieName.Size = UDim2.new(0, 373, 0, 47)
+DoggieName.Font = Enum.Font.SourceSansBold
+DoggieName.Text = "Doggie Scripthub"
+DoggieName.TextColor3 = Color3.fromRGB(0, 0, 0)
+DoggieName.TextSize = 25.000
+DoggieName.TextWrapped = true
+DoggieName.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner.CornerRadius = UDim.new(0, 99)
+UICorner.Parent = DoggieName
+
+DoggieLogo.Name = "DoggieLogo"
+DoggieLogo.Parent = Main
+DoggieLogo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DoggieLogo.BackgroundTransparency = 1.000
+DoggieLogo.BorderColor3 = Color3.fromRGB(27, 42, 53)
+DoggieLogo.BorderSizePixel = 0
+DoggieLogo.Position = UDim2.new(0.0236927718, 0, 0.136622757, 0)
+DoggieLogo.Size = UDim2.new(0, 53, 0, 47)
+DoggieLogo.Image = "rbxassetid://8907498978"
+
+UICorner_2.CornerRadius = UDim.new(0, 99)
+UICorner_2.Parent = DoggieLogo
+
+UICorner_3.CornerRadius = UDim.new(0, 99)
+UICorner_3.Parent = Main
+
+AncesterGUIv1.Name = "AncesterGUIv1"
+AncesterGUIv1.Parent = Main
+AncesterGUIv1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AncesterGUIv1.Position = UDim2.new(0.0607287735, 0, 0.322666645, 0)
+AncesterGUIv1.Size = UDim2.new(0, 200, 0, 50)
+AncesterGUIv1.Font = Enum.Font.SourceSansBold
+AncesterGUIv1.Text = "AncesterGUIv1"
+AncesterGUIv1.TextColor3 = Color3.fromRGB(0, 0, 0)
+AncesterGUIv1.TextSize = 14.000
+AncesterGUIv1.MouseButton1Down:connect(function()
+	loadstring(game:HttpGetAsync'https://ancestordevelopment.wtf/lua/loadstring.lua')('Ancestor');
+end)
+
+UICorner_4.CornerRadius = UDim.new(0, 99)
+UICorner_4.Parent = AncesterGUIv1
+
+AncesterGUIv2.Name = "AncesterGUIv2"
+AncesterGUIv2.Parent = Main
+AncesterGUIv2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AncesterGUIv2.Position = UDim2.new(0.483805656, 0, 0.322666645, 0)
+AncesterGUIv2.Size = UDim2.new(0, 200, 0, 50)
+AncesterGUIv2.Font = Enum.Font.SourceSansBold
+AncesterGUIv2.Text = "AncesterGUIv2"
+AncesterGUIv2.TextColor3 = Color3.fromRGB(0, 0, 0)
+AncesterGUIv2.TextSize = 14.000
+AncesterGUIv2.MouseButton1Down:connect(function()
+	loadstring(game:HttpGetAsync'https://ancestordevelopment.wtf/lua/AncestorV2Source.lua')();
+end)
+
+UICorner_5.CornerRadius = UDim.new(0, 99)
+UICorner_5.Parent = AncesterGUIv2
+
+JailBreakAutoRob.Name = "JailBreak AutoRob"
+JailBreakAutoRob.Parent = Main
+JailBreakAutoRob.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JailBreakAutoRob.Position = UDim2.new(0.273279369, 0, 0.488000005, 0)
+JailBreakAutoRob.Size = UDim2.new(0, 200, 0, 50)
+JailBreakAutoRob.Font = Enum.Font.SourceSansBold
+JailBreakAutoRob.Text = "JailBreak AutoRob"
+JailBreakAutoRob.TextColor3 = Color3.fromRGB(0, 0, 0)
+JailBreakAutoRob.TextSize = 14.000
+JailBreakAutoRob.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet(“https://raw.githubusercontent.com/alohabeach/Main/master/Scripts/JailbreakAutoRob.lua”))()
+end)
+
+UICorner_6.CornerRadius = UDim.new(0, 99)
+UICorner_6.Parent = JailBreakAutoRob
+
+OpenGUI.Name = "OpenGUI"
+OpenGUI.Parent = DoggieScriptHub
+OpenGUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OpenGUI.Position = UDim2.new(0.0148148146, 0, 0.441351891, 0)
+OpenGUI.Size = UDim2.new(0, 200, 0, 50)
+OpenGUI.Font = Enum.Font.SourceSansBold
+OpenGUI.Text = "Open HUB"
+OpenGUI.TextColor3 = Color3.fromRGB(0, 0, 0)
+OpenGUI.TextSize = 30.000
+OpenGUI.TextWrapped = true
+
+UICorner_7.CornerRadius = UDim.new(0, 99)
+UICorner_7.Parent = OpenGUI
